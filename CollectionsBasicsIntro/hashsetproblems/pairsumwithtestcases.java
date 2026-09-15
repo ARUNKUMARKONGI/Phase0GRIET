@@ -1,4 +1,3 @@
-package hashsetproblems;
 import java.util.*;
 public class pairsumwithtestcases {
 
@@ -8,13 +7,19 @@ public class pairsumwithtestcases {
         while(t-- > 0){
             int n = s.nextInt();
             int[] a = new int[n];
-            for(int i=0;i<n;i++) a[i] = s.nextInt();
+            for(int i=0;i<n;i++)
+                 a[i] = s.nextInt();
+
             int k = s.nextInt();
             HashSet<Integer> h = new HashSet<>();
+
             boolean found = false;
-            for(int i=0;i<n;i++){
+
+            for(int i=0;i<n;i++)
+                {
                 int need = k - a[i];
-                if(h.contains(need)){
+                if(h.contains(need))
+                    {
                     found = true;
                     break;
                 }
@@ -25,4 +30,7 @@ public class pairsumwithtestcases {
         }
     }
 }
+
+
+
 /* also asked as pair sum problem such that i!=j  */

@@ -8,13 +8,19 @@ public class intersectionof2arrays {
         int[] b = new int[m];
         for(int i=0;i<n;i++) a[i]=sc.nextInt();
         for(int j=0;j<m;j++) b[j]=sc.nextInt();
+
         HashSet<Integer> setb = new HashSet<>();
-        for(int j=0;j<m;j++) setb.add(b[j]);
+
+        for(int j=0;j<m;j++) 
+            setb.add(b[j]);
+       
         LinkedHashSet<Integer> res = new LinkedHashSet<>();
         for(int i=0;i<n;i++){
-            if(setb.contains(a[i])) res.add(a[i]);
+            if(setb.contains(a[i]))
+                 res.add(a[i]);
         }
-        for(int x:res) System.out.print(x+" ");
+        for(int x:res)
+             System.out.print(x+" ");
     }
 }
 //preserve the order of first array

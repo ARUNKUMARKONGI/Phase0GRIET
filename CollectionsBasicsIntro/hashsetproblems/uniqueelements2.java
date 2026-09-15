@@ -14,3 +14,6 @@ public class uniqueelements2 {
         for(int x:set) System.out.print(x+" ");
     }
 }
+
+
+//this is union of both arrays
